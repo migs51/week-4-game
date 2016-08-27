@@ -55,20 +55,26 @@ $(document).ready(function(){
 
         if(score == number) {
             wins++;
-            $('#wins').text(wins);
+            $('#wins').html(wins);
             console.log('wins: '+ wins);
+            score = 0;
+            reset();
         }
         else if (score > number) {
             losses++;
-            $('#losses').text(losses);
-            console.log('losses: ' + losses);
-            number = (Math.floor(Math.random()*101) +19);
+            $('#losses').html("Losses:" + losses);
+            console.log(losses);
+            score = 0;
+            reset();
 
         }
 
+
     }
 
-
+      function reset() {
+        number = (Math.floor(Math.random()*101) +19);
+    }
 
 	
 
