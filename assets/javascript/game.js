@@ -1,5 +1,14 @@
+var score = 0;
+
+var wins = 0;
+
+var losses = 0;
+
+var number = (Math.floor(Math.random()*101) +19);
+
+
 $(document).ready(function(){
-	number = (Math.floor(Math.random()*101) +19);
+	
 	$('#randomNumber').text(number);
 
 	redRuby_number = (Math.floor(Math.random()*11) + 1);
@@ -10,7 +19,7 @@ $(document).ready(function(){
 
 	diamond_number = (Math.floor(Math.random()*11) + 1);
 
-	score = 0;
+	
 
 
 	$('#redRuby').click(function() {
@@ -36,8 +45,24 @@ $(document).ready(function(){
 		$('#scoreNumber').text(score);
 
 	});
+
+	if(score == number) {
+		wins++;
+		$('#wins').text(wins);
+	}
+	else(score > number) {
+		losses++;
+		$('#losses').text(wins);
+		console.log(losses);
+	}
 	
 
 	
 
 });
+
+
+
+
+
+
