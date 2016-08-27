@@ -1,0 +1,79 @@
+p {
+	line-height: 30px;
+}
+
+h1 {
+
+	color: white;
+	background-color: orange;
+	clear: both;
+	width: 135px;
+	border: 25px solid orange;
+	padding: 0px;
+	margin: 0px;
+	font-size: 20px;
+	text-align: left;
+
+}
+
+#randomNumber {
+
+	width: 100px;
+	border: 25px solid #46b0a6;
+	padding: 25px;
+	margin: 0px;
+	background-color: #46b0a6;
+	float: left;
+}
+
+#win_loss {
+
+	width: 100px;
+	border: 25px solid #b7e2e0;
+	padding: 0px;
+	margin: 0px;
+	background-color: #b7e2e0;
+	float: left;
+	position: relative;
+	bottom: 4px;
+	
+}
+
+img {
+	height: 80px;
+	width: 80px;
+}
+
+#Gems {
+
+	position: relative;;
+	top: 125px;
+	left: -325px;
+	right: 40px;
+	bottom: 40px;
+	float: left;
+}
+
+#totalScoreText {
+	position: relative;;
+	top: 250px;
+	left: -650px;
+	right: 40px;
+	bottom: 40px;
+	float: left;
+
+
+}
+
+#scoreNumber {
+	width: 100px;
+	border: 25px solid #46b0a6;
+	padding: 25px;
+	margin: 0px;
+	background-color: #46b0a6;
+	float: left;
+	clear: both;
+	position: relative;
+	top: 200px;
+
+}
